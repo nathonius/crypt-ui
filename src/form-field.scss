@@ -1,0 +1,81 @@
+$active-text-shadow: 0 0 0.15rem var(--primary);
+
+.crypt-form-label {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+.crypt-form-label-muted {
+  @extend .crypt-form-label;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+.crypt-form-input {
+  color: inherit;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  &:focus,
+  &:focus-within,
+  &:focus-visible {
+    outline: none;
+    text-shadow: $active-text-shadow;
+    &::placeholder {
+      text-shadow: none;
+    }
+  }
+  &::placeholder {
+    color: inherit;
+    opacity: 0.5;
+  }
+}
+
+.crypt-form-field {
+  display: flex;
+  align-items: baseline;
+  gap: 0.3rem;
+  padding: 0.5rem 0.1rem;
+  border-bottom: 1px solid var(--neutral--light-2);
+  &:focus-within {
+    border-color: var(--primary--dark-3);
+    text-shadow: $active-text-shadow;
+  }
+
+  label {
+    @extend .crypt-form-label;
+    cursor: pointer;
+  }
+  input {
+    @extend .crypt-form-input;
+    text-align: right;
+    flex-grow: 1;
+  }
+
+  &.no-label {
+    input {
+      text-align: center;
+    }
+  }
+
+  &.stacked {
+    flex-direction: column;
+    &:focus-within {
+      label {
+        text-shadow: none;
+      }
+    }
+
+    label {
+      @extend .crypt-form-label-muted;
+    }
+
+    input {
+      text-align: left;
+    }
+  }
+}

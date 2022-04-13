@@ -1,0 +1,34 @@
+{
+  "name": "crypt-ui",
+  "version": "1.0.0",
+  "description": "A library of CSS styles to create sci-fi themed components",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OfficerHalf/crypt-ui.git"
+  },
+  "author": "OfficerHalf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OfficerHalf/crypt-ui/issues"
+  },
+  "homepage": "https://github.com/OfficerHalf/crypt-ui#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.50.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "devDependencies": {
+    "@types/gulp": "^4.0.9",
+    "@types/gulp-autoprefixer": "^0.0.33",
+    "@types/gulp-sass": "^5.0.0"
+  }
+}

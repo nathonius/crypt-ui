@@ -1,0 +1,51 @@
+:root {
+  /* Main Palette */
+  --primary: hsl(180, 70%, 67%);
+  --secondary: hsl(29, 79%, 55%);
+  --success: hsl(135, 71%, 65%);
+  --danger: hsl(1, 74%, 55%);
+  --neutral: hsl(191, 67%, 5%);
+
+  /* Shades */
+  --primary--light-1: hsl(180, 70%, 77%);
+  --primary--light-2: hsl(180, 70%, 87%);
+  --primary--light-3: hsl(180, 70%, 97%);
+  --primary--dark-1: hsl(180, 70%, 57%);
+  --primary--dark-2: hsl(180, 70%, 47%);
+  --primary--dark-3: hsl(180, 70%, 37%);
+  --secondary--light-1: hsl(29, 79%, 65%);
+  --secondary--light-2: hsl(29, 79%, 75%);
+  --secondary--light-3: hsl(29, 79%, 85%);
+  --secondary--dark-1: hsl(29, 79%, 50%);
+  --secondary--dark-2: hsl(29, 79%, 45%);
+  --secondary--dark-3: hsl(29, 79%, 35%);
+  --success--light-1: hsl(135, 71%, 70%);
+  --success--light-2: hsl(135, 71%, 75%);
+  --success--light-3: hsl(135, 71%, 80%);
+  --success--dark-1: hsl(135, 71%, 55%);
+  --success--dark-2: hsl(135, 71%, 45%);
+  --success--dark-3: hsl(135, 71%, 35%);
+  --danger--light-1: hsl(1, 74%, 60%);
+  --danger--light-2: hsl(1, 74%, 65%);
+  --danger--light-3: hsl(1, 74%, 70%);
+  --danger--dark-1: hsl(1, 74%, 45%);
+  --danger--dark-2: hsl(1, 74%, 35%);
+  --danger--dark-3: hsl(1, 74%, 25%);
+  --neutral-secondary: hsl(29, 79%, 5%);
+  --neutral-secondary--light-1: hsl(29, 79%, 8%);
+  --neutral-secondary--light-2: hsl(29, 79%, 11%);
+  --neutral-secondary--light-3: hsl(29, 79%, 14%);
+  --neutral-success: hsl(135, 71%, 5%);
+  --neutral-success--light-1: hsl(135, 71%, 8%);
+  --neutral-success--light-2: hsl(135, 71%, 11%);
+  --neutral-success--light-3: hsl(135, 71%, 14%);
+  --neutral-danger: hsl(1, 74%, 5%);
+  --neutral-danger--light-1: hsl(1, 74%, 8%);
+  --neutral-danger--light-2: hsl(1, 74%, 11%);
+  --neutral-danger--light-3: hsl(1, 74%, 14%);
+  --neutral--light-1: hsl(191, 67%, 8%);
+  --neutral--light-2: hsl(191, 67%, 11%);
+  --neutral--light-3: hsl(191, 67%, 14%);
+  --neutral--light-4: hsl(191, 67%, 17%);
+  --neutral--light-5: hsl(191, 67%, 20%);
+}

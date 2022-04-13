@@ -1,0 +1,22 @@
+/* Hide an element but keep it accessible */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+
+  // This works around a Chrome bug that can cause the tab to crash when large amounts of
+  // non-English text get wrapped: https://bugs.chromium.org/p/chromium/issues/detail?id=1201444
+  white-space: nowrap;
+
+  // Avoid browsers rendering the focus ring in some cases.
+  outline: 0;
+
+  // Avoid some cases where the browser will still render the native controls (see #9049).
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
