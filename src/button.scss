@@ -1,0 +1,65 @@
+.crypt-button {
+  --button-color: var(--primary);
+  --idle-bg-color: var(--neutral--light-2);
+  --hover-bg-color: var(--neutral--light-4);
+  --active-bg-color: var(--neutral--light-2);
+  --active-border-color: var(--primary--dark-1);
+
+  /* Reset default/browser styles */
+  box-shadow: none;
+  border: none;
+  margin: 0;
+  font-family: inherit;
+
+  cursor: pointer;
+  color: var(--button-color);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--button-color);
+  border-radius: 0.2rem;
+  background-color: var(--idle-bg-color);
+
+  &:hover {
+    background-color: var(--hover-bg-color);
+    text-shadow: 0 0 0.2rem var(--button-color);
+  }
+  &:active {
+    background-color: var(--active-bg-color);
+    border-color: var(--active-border-color);
+  }
+
+  /* Round button */
+  &.round {
+    border-radius: 2rem;
+  }
+
+  /* States */
+  &.secondary {
+    --button-color: var(--secondary);
+    --idle-bg-color: var(--neutral-secondary--light-1);
+    --hover-bg-color: var(--neutral-secondary--light-2);
+    --active-bg-color: var(--neutral-secondary--light-1);
+    --active-border-color: var(--secondary--dark-1);
+    &:hover {
+      color: var(--secondary--light-1);
+    }
+  }
+
+  &.success {
+    --button-color: var(--success);
+    --idle-bg-color: var(--neutral-success--light-1);
+    --hover-bg-color: var(--neutral-success--light-2);
+    --active-bg-color: var(--neutral-success--light-1);
+    --active-border-color: var(--success--dark-1);
+  }
+
+  &.danger {
+    --button-color: var(--danger);
+    --idle-bg-color: var(--neutral-danger--light-1);
+    --hover-bg-color: var(--neutral-danger--light-2);
+    --active-bg-color: var(--neutral-danger--light-1);
+    --active-border-color: var(--danger--dark-1);
+    &:hover {
+      color: var(--danger--light-2);
+    }
+  }
+}

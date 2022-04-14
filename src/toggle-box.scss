@@ -1,0 +1,54 @@
+.crypt-toggle-box {
+  --box-background: var(--neutral);
+  --box-color: var(--primary);
+  --placeholder-color: var(--primary--dark-2);
+
+  background-color: var(--box-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid var(--box-color);
+  padding: 1px;
+  width: 1.2rem;
+  height: 1.2rem;
+
+  label {
+    width: 100%;
+    height: 100%;
+    font-size: 0.75rem;
+    cursor: pointer;
+    user-select: none;
+    color: var(--placeholder-color);
+  }
+  input:checked ~ label {
+    background-color: var(--box-color);
+    color: var(--box-background);
+  }
+
+  &.round {
+    border-radius: 50%;
+    label {
+      border-radius: 50%;
+    }
+  }
+
+  /* States */
+  &.secondary {
+    --box-background: var(--neutral-secondary);
+    --box-color: var(--secondary);
+    --placeholder-color: var(--secondary--dark-1);
+  }
+
+  &.success {
+    --box-background: var(--neutral-success);
+    --box-color: var(--success);
+    --placeholder-color: var(--success--dark-1);
+  }
+
+  &.danger {
+    --box-background: var(--neutral-danger);
+    --box-color: var(--danger);
+    --placeholder-color: var(--danger--dark-1);
+  }
+}

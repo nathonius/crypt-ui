@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Test Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Source+Code+Pro&family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/crypt.css" />
+    <style>
+      html {
+        background-color: var(--neutral);
+        color: var(--primary);
+        font-family: "Titillium Web", sans-serif;
+      }
+      .section-group {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top" role="document">
+      <header>
+        <h1>Crypt Test Page</h1>
+      </header>
+      <nav>
+        <ul></ul>
+      </nav>
+      <main>
+        <section id="button-square">
+          <h2>Square Buttons</h2>
+          <div class="section-group">
+            <button class="crypt-button">Button</button>
+            <button class="crypt-button secondary">Button</button>
+            <button class="crypt-button success">Button</button>
+            <button class="crypt-button danger">Button</button>
+          </div>
+        </section>
+        <section id="button-round">
+          <h2>Round Buttons</h2>
+          <div class="section-group">
+            <button class="crypt-button round">Button</button>
+            <button class="crypt-button round secondary">Button</button>
+            <button class="crypt-button round success">Button</button>
+            <button class="crypt-button round danger">Button</button>
+          </div>
+        </section>
+        <section id="form-field">
+          <h2>Form Fields</h2>
+          <div class="section-group">
+            <div>
+              <div class="crypt-form-field">
+                <label for="input-1">Name</label>
+                <input type="text" id="input-1" placeholder="Enter your name" />
+              </div>
+              <div class="crypt-form-field stacked">
+                <label for="input-2">Name</label>
+                <input type="text" id="input-2" placeholder="Enter your name" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="toggle-box">
+          <h2>Toggle</h2>
+          <div class="section-group">
+            <div class="crypt-toggle-box">
+              <input
+                class="visually-hidden"
+                id="toggle-box-1"
+                type="checkbox"
+              />
+              <label for="toggle-box-1"></label>
+            </div>
+            <div class="crypt-toggle-box">
+              <input
+                class="visually-hidden"
+                id="toggle-box-2"
+                type="checkbox"
+              />
+              <label for="toggle-box-2">1</label>
+            </div>
+            <div class="crypt-toggle-box">
+              <input
+                class="visually-hidden"
+                id="toggle-box-3"
+                type="checkbox"
+              />
+              <label for="toggle-box-3">10</label>
+            </div>
+            <div class="crypt-toggle-box round">
+              <input
+                class="visually-hidden"
+                id="toggle-box-4"
+                type="checkbox"
+              />
+              <label for="toggle-box-4"></label>
+            </div>
+            <div class="crypt-toggle-box round">
+              <input
+                class="visually-hidden"
+                id="toggle-box-5"
+                type="checkbox"
+              />
+              <label for="toggle-box-5">1</label>
+            </div>
+            <div class="crypt-toggle-box round">
+              <input
+                class="visually-hidden"
+                id="toggle-box-6"
+                type="checkbox"
+              />
+              <label for="toggle-box-6">10</label>
+            </div>
+          </div>
+          <div class="section-group">
+            <div class="crypt-toggle-box secondary">
+              <input
+                class="visually-hidden"
+                id="toggle-box-secondary-1"
+                type="checkbox"
+              />
+              <label for="toggle-box-secondary-1"></label>
+            </div>
+            <div class="crypt-toggle-box secondary">
+              <input
+                class="visually-hidden"
+                id="toggle-box-secondary-2"
+                type="checkbox"
+              />
+              <label for="toggle-box-secondary-2">1</label>
+            </div>
+            <div class="crypt-toggle-box secondary">
+              <input
+                class="visually-hidden"
+                id="toggle-box-secondary-3"
+                type="checkbox"
+              />
+              <label for="toggle-box-secondary-3">10</label>
+            </div>
+            <div class="crypt-toggle-box secondary round">
+              <input
+                class="visually-hidden"
+                id="toggle-box-secondary-4"
+                type="checkbox"
+              />
+              <label for="toggle-box-secondary-4"></label>
+            </div>
+            <div class="crypt-toggle-box secondary round">
+              <input
+                class="visually-hidden"
+                id="toggle-box-secondary-5"
+                type="checkbox"
+              />
+              <label for="toggle-box-secondary-5">1</label>
+            </div>
+            <div class="crypt-toggle-box secondary round">
+              <input
+                class="visually-hidden"
+                id="toggle-box-secondary-6"
+                type="checkbox"
+              />
+              <label for="toggle-box-secondary-6">10</label>
+            </div>
+          </div>
+          <div class="section-group">
+            <div class="crypt-toggle-box success">
+              <input
+                class="visually-hidden"
+                id="toggle-box-success-1"
+                type="checkbox"
+              />
+              <label for="toggle-box-success-1"></label>
+            </div>
+            <div class="crypt-toggle-box success">
+              <input
+                class="visually-hidden"
+                id="toggle-box-success-2"
+                type="checkbox"
+              />
+              <label for="toggle-box-success-2">1</label>
+            </div>
+            <div class="crypt-toggle-box success">
+              <input
+                class="visually-hidden"
+                id="toggle-box-success-3"
+                type="checkbox"
+              />
+              <label for="toggle-box-success-3">10</label>
+            </div>
+            <div class="crypt-toggle-box success round">
+              <input
+                class="visually-hidden"
+                id="toggle-box-success-4"
+                type="checkbox"
+              />
+              <label for="toggle-box-success-4"></label>
+            </div>
+            <div class="crypt-toggle-box success round">
+              <input
+                class="visually-hidden"
+                id="toggle-box-success-5"
+                type="checkbox"
+              />
+              <label for="toggle-box-success-5">1</label>
+            </div>
+            <div class="crypt-toggle-box success round">
+              <input
+                class="visually-hidden"
+                id="toggle-box-success-6"
+                type="checkbox"
+              />
+              <label for="toggle-box-success-6">10</label>
+            </div>
+          </div>
+          <div class="section-group">
+            <div class="crypt-toggle-box danger">
+              <input
+                class="visually-hidden"
+                id="toggle-box-danger-1"
+                type="checkbox"
+              />
+              <label for="toggle-box-danger-1"></label>
+            </div>
+            <div class="crypt-toggle-box danger">
+              <input
+                class="visually-hidden"
+                id="toggle-box-danger-2"
+                type="checkbox"
+              />
+              <label for="toggle-box-danger-2">1</label>
+            </div>
+            <div class="crypt-toggle-box danger">
+              <input
+                class="visually-hidden"
+                id="toggle-box-danger-3"
+                type="checkbox"
+              />
+              <label for="toggle-box-danger-3">10</label>
+            </div>
+            <div class="crypt-toggle-box danger round">
+              <input
+                class="visually-hidden"
+                id="toggle-box-danger-4"
+                type="checkbox"
+              />
+              <label for="toggle-box-danger-4"></label>
+            </div>
+            <div class="crypt-toggle-box danger round">
+              <input
+                class="visually-hidden"
+                id="toggle-box-danger-5"
+                type="checkbox"
+              />
+              <label for="toggle-box-danger-5">1</label>
+            </div>
+            <div class="crypt-toggle-box danger round">
+              <input
+                class="visually-hidden"
+                id="toggle-box-danger-6"
+                type="checkbox"
+              />
+              <label for="toggle-box-danger-6">10</label>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
