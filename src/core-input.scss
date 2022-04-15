@@ -5,7 +5,10 @@ $active-circle-shadow: 0 0 0.25rem var(--text-color);
   --border-color--idle: var(--primary--dark-3);
   --border-color--active: var(--primary);
   --text-color: var(--primary);
+  --bg-color--idle: var(--neutral--light-1);
+  --bg-color--active: var(--neutral--light-2);
 
+  background-color: var(--bg-color--idle);
   border: 1px solid var(--border-color--idle);
   border-radius: 50%;
   display: flex;
@@ -45,6 +48,7 @@ $active-circle-shadow: 0 0 0.25rem var(--text-color);
   }
 
   &:focus-within {
+    background-color: var(--bg-color--active);
     border-color: var(--border-color--active);
     box-shadow: $active-circle-shadow inset;
     input {
@@ -56,15 +60,21 @@ $active-circle-shadow: 0 0 0.25rem var(--text-color);
     --border-color--idle: var(--secondary);
     --border-color--active: var(--secondary--light-1);
     --text-color: var(--secondary--light-1);
+    --bg-color--idle: var(--neutral-secondary);
+    --bg-color--active: var(--neutral-secondary--light-1);
   }
   &.success {
     --border-color--idle: var(--success);
     --border-color--active: var(--success--light-1);
     --text-color: var(--success--light-1);
+    --bg-color--idle: var(--neutral-success);
+    --bg-color--active: var(--neutral-success--light-1);
   }
   &.danger {
     --border-color--idle: var(--danger);
     --border-color--active: var(--danger--light-1);
     --text-color: var(--danger--light-1);
+    --bg-color--idle: var(--neutral-danger);
+    --bg-color--active: var(--neutral-danger--light-1);
   }
 }
