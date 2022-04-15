@@ -78,4 +78,31 @@ $active-text-shadow: 0 0 0.15rem var(--primary);
       text-align: left;
     }
   }
+
+  &.full {
+    --border-inactive: var(--primary--dark-3);
+    --border-active: var(--primary);
+
+    border: 1px solid var(--border-inactive);
+    border-radius: 0.2rem;
+    padding: 0.3rem;
+    align-items: center;
+
+    input {
+      text-align: left;
+    }
+
+    .icon {
+      opacity: 0.5;
+      height: 1rem;
+      width: 1rem;
+    }
+
+    &:focus-within {
+      border-color: var(--border-active);
+      .icon {
+        opacity: 0.7;
+      }
+    }
+  }
 }

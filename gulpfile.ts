@@ -12,9 +12,12 @@ gulp.task("scss", () => {
     .pipe(gulp.dest("./dist"));
 });
 
-gulp.task("copy", () => {
-  return gulp.src("index.html").pipe(gulp.dest("./dist"));
-});
+gulp.task("html", () => gulp.src(["index.html"]).pipe(gulp.dest("./dist")));
+gulp.task("assets", () =>
+  gulp.src(["assets/**/*"]).pipe(gulp.dest("./dist/assets"))
+);
+
+gulp.task("copy", gulp.series("html", "assets"));
 
 gulp.task("watch", () => {
   gulp.watch("src/**/*.scss", gulp.series("scss"));
