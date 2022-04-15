@@ -1,8 +1,9 @@
 import svelte from "rollup-plugin-svelte";
 import resolve from "@rollup/plugin-node-resolve";
 import pkg from "./package.json";
-import sveltePreprocess from "svelte-preprocess";
+import preprocess from "svelte-preprocess";
 import typescript from "@rollup/plugin-typescript";
+// import css from "rollup-plugin-css-only";
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -19,10 +20,14 @@ export default {
   ],
   plugins: [
     svelte({
-      preprocess: sveltePreprocess({ sourceMap: false }),
+      preprocess: preprocess({
+        sourceMap: false,
+      }),
       compilerOptions: {
         customElement: false,
+        css: true,
       },
+      emitCss: false,
     }),
     resolve(),
     typescript({

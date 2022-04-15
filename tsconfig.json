@@ -4,6 +4,6 @@
     "declaration": true,
     "outDir": "dist"
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules/*", "__sapper__/*", "public/*"]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules/*", "__sapper__/*", "public/*", "src/stories"]
 }
