@@ -20,6 +20,6 @@ gulp.task("assets", () =>
 gulp.task("copy", gulp.series("html", "assets"));
 
 gulp.task("watch", () => {
-  gulp.watch("src/**/*.scss", gulp.series("scss"));
+  gulp.watch(["src/**/*.scss", "index.html"], gulp.series("default"));
 });
 gulp.task("default", gulp.series("scss", "copy"));
