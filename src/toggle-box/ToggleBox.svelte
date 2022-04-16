@@ -9,5 +9,5 @@
 </div>
 
 <style lang="scss">
-  @use "./toggle-box";
+  @use "toggle-box";
 </style>

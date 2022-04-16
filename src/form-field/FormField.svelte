@@ -11,5 +11,5 @@
 </div>
 
 <style lang="scss">
-  @use "./form-field";
+  @use "form-field";
 </style>
