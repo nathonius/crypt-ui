@@ -1,0 +1,15 @@
+@use "theme";
+@use "utility";
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Titillium+Web&display=swap");
+
+html {
+  font-family: var(--font-primary);
+  background-color: var(--neutral);
+  color: var(--primary);
+}
+
+input,
+label,
+button {
+  font-family: inherit;
+}

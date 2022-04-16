@@ -1,12 +1,15 @@
 {
   "name": "crypt-ui",
+  "svelte": "src/index.js",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
   "version": "1.0.0",
   "description": "A library of CSS styles to create sci-fi themed components",
-  "main": "index.js",
   "scripts": {
-    "build": "gulp",
-    "watch": "gulp watch",
-    "copy": "gulp copy"
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -18,18 +21,30 @@
     "url": "https://github.com/OfficerHalf/crypt-ui/issues"
   },
   "homepage": "https://github.com/OfficerHalf/crypt-ui#readme",
-  "dependencies": {
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-cli": "^2.3.0",
-    "gulp-sass": "^5.1.0",
-    "sass": "^1.50.0",
-    "ts-node": "^10.7.0",
-    "typescript": "^4.6.3"
-  },
   "devDependencies": {
-    "@types/gulp": "^4.0.9",
-    "@types/gulp-autoprefixer": "^0.0.33",
-    "@types/gulp-sass": "^5.0.0"
+    "@babel/core": "^7.17.9",
+    "@rollup/plugin-node-resolve": "^13.2.1",
+    "@rollup/plugin-typescript": "^8.3.2",
+    "@storybook/addon-actions": "^6.4.22",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-links": "^6.4.22",
+    "@storybook/addon-svelte-csf": "^2.0.1",
+    "@storybook/addons": "^6.4.22",
+    "@storybook/svelte": "^6.4.22",
+    "@storybook/theming": "^6.4.22",
+    "@tsconfig/svelte": "^3.0.0",
+    "babel-loader": "^8.2.4",
+    "normalize.css": "^8.0.1",
+    "rollup": "^2.70.2",
+    "rollup-plugin-scss": "^3.0.0",
+    "rollup-plugin-svelte": "^7.1.0",
+    "sass": "^1.50.0",
+    "svelte": "^3.47.0",
+    "svelte-check": "^2.7.0",
+    "svelte-loader": "^3.1.2",
+    "svelte-preprocess": "^4.10.6",
+    "ts-node": "^10.7.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.3"
   }
 }
