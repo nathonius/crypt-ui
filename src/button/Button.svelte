@@ -8,5 +8,5 @@
 </button>
 
 <style lang="scss">
-  @use "./button";
+  @use "button";
 </style>

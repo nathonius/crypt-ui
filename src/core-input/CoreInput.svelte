@@ -8,5 +8,5 @@
 </div>
 
 <style lang="scss">
-  @use "./core-input";
+  @use "core-input";
 </style>

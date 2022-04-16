@@ -1,15 +1,24 @@
 module.exports = {
-  "stories": [
+  stories: [
     "../src/**/*.stories.mdx",
-    "../src/**/*.stories.@(js|jsx|ts|tsx|svelte)"
+    "../src/**/*.stories.@(js|jsx|ts|tsx|svelte)",
   ],
-  "addons": [
+  addons: [
     "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    "@storybook/addon-svelte-csf"
+    {
+      name: "@storybook/addon-essentials",
+      options: {
+        docs: false,
+      },
+    },
+    "@storybook/addon-svelte-csf",
   ],
-  "framework": "@storybook/svelte",
-  "svelteOptions": {
-    "preprocess": require("svelte-preprocess")()
-  }
-}
+  framework: "@storybook/svelte",
+  svelteOptions: {
+    preprocess: require("svelte-preprocess")(),
+    compilerOptions: {
+      css: true,
+    },
+    emitCss: false,
+  },
+};
