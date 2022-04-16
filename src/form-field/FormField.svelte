@@ -1,3 +1,5 @@
+<svelte:options tag={null} />
+
 <script lang="ts">
   export let label: string = "";
   export let mode: "default" | "stacked" | "full" = "default";

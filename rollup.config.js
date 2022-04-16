@@ -26,7 +26,7 @@ export default [
           sourceMap: false,
         }),
         compilerOptions: {
-          customElement: false,
+          customElement: true,
           css: true,
         },
         emitCss: false,

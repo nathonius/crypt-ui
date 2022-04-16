@@ -1,3 +1,5 @@
+<svelte:options tag={null} />
+
 <script lang="ts">
   export let color: "primary" | "secondary" | "success" | "danger" = "primary";
   export let round = false;
