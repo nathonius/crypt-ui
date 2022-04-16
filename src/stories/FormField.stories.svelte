@@ -1,44 +1,56 @@
 <script>
   import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
-  import Button from "../button/Button.svelte";
+  import FormField from "../form-field/FormField.svelte";
 </script>
 
 <!-- More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export -->
 <!-- More on argTypes: https://storybook.js.org/docs/svelte/api/argtypes -->
 <Meta
-  title="Crypt UI/Button"
-  component={Button}
+  title="Crypt UI/Form Field"
+  component={FormField}
   argTypes={{
-    color: {
+    mode: {
       control: { type: "select" },
-      options: ["primary", "secondary", "success", "danger"],
+      options: ["default", "stacked", "full"],
     },
-    onClick: { action: "onClick" },
   }}
 />
 
 <!-- More on component templates: https://storybook.js.org/docs/svelte/writing-stories/introduction#using-args -->
 <Template let:args>
-  <Button color={args.color} on:click={args.onClick} round={args.round}>
-    {args.label}
-  </Button>
+  <div style="width: 300px">
+    <FormField
+      mode={args.mode}
+      id="form-field"
+      label={args.label}
+      placeholder={args.placeholder}
+    />
+  </div>
 </Template>
 
 <!-- More on args: https://storybook.js.org/docs/svelte/writing-stories/args -->
 <Story
-  name="Square"
+  name="Default"
   args={{
-    color: "primary",
-    label: "Button",
-    round: false,
+    mode: "default",
+    placeholder: "Enter your name",
+    label: "Name",
   }}
 />
 
 <Story
-  name="Round"
+  name="Stacked"
   args={{
-    color: "primary",
-    label: "Button",
-    round: true,
+    mode: "stacked",
+    placeholder: "Enter your name",
+    label: "Name",
+  }}
+/>
+
+<Story
+  name="Full"
+  args={{
+    mode: "full",
+    placeholder: "Search",
   }}
 />

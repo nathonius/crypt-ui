@@ -1,27 +1,26 @@
 <script>
   import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
-  import Button from "../button/Button.svelte";
+  import ToggleBox from "../toggle-box/ToggleBox.svelte";
 </script>
 
 <!-- More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export -->
 <!-- More on argTypes: https://storybook.js.org/docs/svelte/api/argtypes -->
 <Meta
-  title="Crypt UI/Button"
-  component={Button}
+  title="Crypt UI/Toggle Box"
+  component={ToggleBox}
   argTypes={{
     color: {
       control: { type: "select" },
       options: ["primary", "secondary", "success", "danger"],
     },
-    onClick: { action: "onClick" },
   }}
 />
 
 <!-- More on component templates: https://storybook.js.org/docs/svelte/writing-stories/introduction#using-args -->
 <Template let:args>
-  <Button color={args.color} on:click={args.onClick} round={args.round}>
-    {args.label}
-  </Button>
+  <ToggleBox color={args.color} round={args.round} id="toggle-box">
+    {args.placeholder}
+  </ToggleBox>
 </Template>
 
 <!-- More on args: https://storybook.js.org/docs/svelte/writing-stories/args -->
@@ -29,7 +28,7 @@
   name="Square"
   args={{
     color: "primary",
-    label: "Button",
+    placeholder: "1",
     round: false,
   }}
 />
@@ -38,7 +37,7 @@
   name="Round"
   args={{
     color: "primary",
-    label: "Button",
-    round: true,
+    placeholder: "1",
+    round: false,
   }}
 />

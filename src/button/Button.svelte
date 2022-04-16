@@ -3,11 +3,10 @@
   export let round: boolean = false;
 </script>
 
-<button class="crypt-button {color}" class:round>
+<button class="crypt-button {color}" class:round {...$$restProps}>
   <slot />
 </button>
 
 <style lang="scss">
-  @use "theme.scss";
-  @use "button.scss";
+  @use "./button";
 </style>
