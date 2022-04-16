@@ -1,6 +1,5 @@
 {
   "name": "crypt-ui",
-  "svelte": "src/index.ts",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "types": "src/index.ts",
