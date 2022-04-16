@@ -1,8 +1,9 @@
 {
   "name": "crypt-ui",
-  "svelte": "src/index.js",
+  "svelte": "src/index.ts",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
+  "types": "src/index.ts",
   "version": "1.0.0-beta.1",
   "description": "A library of CSS styles to create sci-fi themed components",
   "scripts": {
