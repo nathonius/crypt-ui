@@ -38,6 +38,6 @@
   args={{
     color: "primary",
     placeholder: "1",
-    round: false,
+    round: true,
   }}
 />
