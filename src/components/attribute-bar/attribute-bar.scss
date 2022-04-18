@@ -1,0 +1,101 @@
+$active-text-shadow: 0 0 0.15rem var(--text-color);
+$active-shadow: 0 0 0.25rem var(--border-color);
+
+.crypt-attribute-bar {
+  --border-color: var(--primary--dark-2);
+  --text-color: var(--primary);
+  --bar-color: var(--neutral--light-2);
+  --bar-value-color: var(--primary--dark-3);
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 0.3rem;
+  align-items: center;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 0.2rem;
+  background-color: var(--bar-color);
+
+  .attribute-value {
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+    width: 100%;
+    color: var(--text-color);
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    height: 100%;
+    outline: none;
+
+    &.left {
+      text-align: right;
+    }
+
+    &.right {
+      text-align: left;
+    }
+
+    &::placeholder {
+      color: var(--text-color);
+      opacity: 0.5;
+    }
+  }
+
+  .slash {
+    z-index: 2;
+    user-select: none;
+    color: var(--text-color);
+  }
+
+  progress {
+    z-index: 1;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    pointer-events: none;
+    &::-webkit-progress-bar {
+      background-color: transparent;
+    }
+    &::-moz-progress-bar {
+      background-color: var(--bar-value-color);
+    }
+    &::-webkit-progress-value {
+      background-color: var(--bar-value-color);
+    }
+  }
+
+  &:focus-within {
+    border: 1px solid var(--border-color);
+    box-shadow: $active-shadow inset;
+    .attribute-value {
+      text-shadow: $active-text-shadow;
+    }
+  }
+
+  &.secondary {
+    --border-color: var(--secondary--dark-3);
+    --text-color: var(--secondary);
+    --bar-color: var(--neutral-secondary--light-1);
+    --bar-value-color: var(--secondary--dark-3);
+  }
+
+  &.success {
+    --border-color: var(--success--dark-3);
+    --text-color: var(--success);
+    --bar-color: var(--neutral-success--light-1);
+    --bar-value-color: var(--success--dark-3);
+  }
+
+  &.danger {
+    --border-color: var(--danger--dark-3);
+    --text-color: var(--danger);
+    --bar-color: var(--neutral-danger--light-1);
+    --bar-value-color: var(--danger--dark-3);
+  }
+}

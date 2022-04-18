@@ -1,11 +1,16 @@
-import "../dist/crypt.css";
+import { addParameters } from "@storybook/html"; // <- or your storybook framework
+import { themes } from "@storybook/theming";
+import "@storybook/addon-console";
+import "../src/crypt.scss";
+import "../src/defaults.scss";
 
-export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/,
-    },
+addParameters({
+  a11y: {
+    config: {},
+    options: {},
   },
-};
+  layout: "fullscreen",
+  docs: {
+    theme: themes.dark,
+  },
+});

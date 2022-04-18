@@ -1,1 +1,1 @@
-/// <reference types="svelte" />
+declare module "*.html";
