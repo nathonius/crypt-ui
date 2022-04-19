@@ -1,7 +1,7 @@
 import { addParameters } from "@storybook/html"; // <- or your storybook framework
 import { themes } from "@storybook/theming";
 import "@storybook/addon-console";
-import "../src/crypt.scss";
+import "../src/storybook.scss";
 import "../src/defaults.scss";
 
 addParameters({
