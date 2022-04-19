@@ -1,0 +1,84 @@
+.crypt-toggle {
+  --background-color-off: var(--neutral--light-1);
+  --background-color-on: var(--neutral--light-2);
+  --toggle-color-off: var(--neutral--light-4);
+  --toggle-color-on: var(--primary);
+  --toggle-width: 60px;
+  --toggle-height: 34px;
+  --slider-size: 26px;
+  /* These are magic numbers, just play with them until it looks right */
+  /* It absolutely will not be browser consistent. Just focus on chrome. */
+  --slider-space-left: 2.5px;
+  --slider-space-bottom: 3px;
+
+  box-sizing: content-box;
+  display: block;
+  position: relative;
+  width: var(--toggle-width);
+  height: var(--toggle-height);
+
+  .slider {
+    box-sizing: content-box;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid var(--toggle-color-off);
+    background-color: var(--background-color-off);
+    transition: all 0.4s;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: var(--slider-size);
+      width: var(--slider-size);
+      left: var(--slider-space-left);
+      bottom: var(--slider-space-bottom);
+      background-color: var(--toggle-color-off);
+      transition: all 0.2s;
+    }
+  }
+
+  input:checked + .slider {
+    background-color: var(--background-color-on);
+    box-shadow: 0 0 4px var(--toggle-color-off) inset;
+  }
+
+  input:checked + .slider::before {
+    background-color: var(--toggle-color-on);
+    opacity: 1;
+    transform: translateX(var(--slider-size));
+  }
+
+  &.round {
+    .slider {
+      border-radius: var(--toggle-width);
+    }
+    .slider::before {
+      border-radius: 50%;
+    }
+  }
+
+  &.secondary {
+    --background-color-off: var(--neutral-secondary);
+    --background-color-on: var(--neutral-secondary--light-1);
+    --toggle-color-off: var(--neutral-secondary--light-3);
+    --toggle-color-on: var(--secondary--light-1);
+  }
+
+  &.success {
+    --background-color-off: var(--neutral-success);
+    --background-color-on: var(--neutral-success--light-1);
+    --toggle-color-off: var(--neutral-success--light-3);
+    --toggle-color-on: var(--success--light-1);
+  }
+
+  &.danger {
+    --background-color-off: var(--neutral-danger);
+    --background-color-on: var(--neutral-danger--light-1);
+    --toggle-color-off: var(--neutral-danger--light-3);
+    --toggle-color-on: var(--danger--light-1);
+  }
+}
