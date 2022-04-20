@@ -2,7 +2,7 @@
   "name": "crypt-ui",
   "main": "src/crypt.scss",
   "style": "src/crypt.scss",
-  "version": "1.0.0-beta.4",
+  "version": "1.0.0-beta.5",
   "description": "A library of CSS styles to create sci-fi themed components",
   "scripts": {
     "build": "build-storybook -c .storybook -o build",
