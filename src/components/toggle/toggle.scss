@@ -3,13 +3,13 @@
   --background-color-on: var(--neutral--light-2);
   --toggle-color-off: var(--neutral--light-4);
   --toggle-color-on: var(--primary);
-  --toggle-width: 40px;
-  --toggle-height: 22px;
-  --slider-size: 17px;
+  --toggle-width: 42px;
+  --toggle-height: 24px;
+  --slider-size: 18px;
   /* These are magic numbers, just play with them until it looks right */
   /* It absolutely will not be browser consistent. Just focus on chrome. */
-  --slider-space-left: 1.5px;
-  --slider-space-bottom: 1.5px;
+  --slider-space-left: 2px;
+  --slider-space-bottom: 2px;
 
   box-sizing: content-box;
   display: block;

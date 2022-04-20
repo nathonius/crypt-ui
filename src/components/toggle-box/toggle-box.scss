@@ -3,13 +3,7 @@
   --box-color: var(--primary);
   --placeholder-color: var(--primary--dark-2);
 
-  background-color: var(--box-background);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  border: 1px solid var(--box-color);
-  padding: 1px;
   width: 1.2rem;
   height: 1.2rem;
 
@@ -23,6 +17,9 @@
     cursor: pointer;
     user-select: none;
     color: var(--placeholder-color);
+    background-color: var(--box-background);
+    border: 1px solid var(--box-color);
+    line-height: 1;
   }
   input:checked ~ label {
     background-color: var(--box-color);
