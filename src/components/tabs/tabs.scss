@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
 
-  .tab {
+  .crypt-tab {
     cursor: pointer;
     color: var(--text-inactive);
     display: flex;
@@ -36,7 +36,7 @@
   }
 
   &.small {
-    .tab {
+    .crypt-tab {
       padding: 0.5rem 1rem;
     }
   }
