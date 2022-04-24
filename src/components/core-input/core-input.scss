@@ -45,6 +45,10 @@ $active-circle-shadow: 0 0 0.25rem var(--text-color);
       color: var(--text-color);
       opacity: 0.5;
     }
+    &:focus {
+      /* Foundry applies a box shadow to focused inputs */
+      box-shadow: none;
+    }
   }
 
   &:focus-within {
