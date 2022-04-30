@@ -50,10 +50,20 @@ $active-text-shadow: 0 0 0.15rem var(--primary);
     @extend .crypt-form-label;
     cursor: pointer;
   }
-  input {
+  input,
+  select {
     @extend .crypt-form-input;
     text-align: right;
     flex-grow: 1;
+  }
+
+  /* Select Specific */
+  select {
+    min-width: 150px;
+  }
+  option {
+    color: initial;
+    text-shadow: none;
   }
 
   &.no-label {
@@ -74,8 +84,12 @@ $active-text-shadow: 0 0 0.15rem var(--primary);
       @extend .crypt-form-label-muted;
     }
 
-    input {
+    input,
+    select {
       text-align: left;
+    }
+    select {
+      width: 100%;
     }
   }
 
@@ -88,7 +102,8 @@ $active-text-shadow: 0 0 0.15rem var(--primary);
     padding: 0.3rem;
     align-items: center;
 
-    input {
+    input,
+    select {
       text-align: left;
     }
 
