@@ -4,6 +4,7 @@ $active-text-shadow: 0 0 0.15rem var(--primary);
   text-transform: uppercase;
   font-weight: bold;
   font-family: inherit;
+  white-space: nowrap;
 }
 
 .crypt-form-label-muted {
