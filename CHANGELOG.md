@@ -2,11 +2,11 @@
 
 ## 1.1.0
 
-## Features
+### Features
 
 - Add chip component
 
-## Fixes
+### Fixes
 
 - Prevent form field label text wrapping
 
