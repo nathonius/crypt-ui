@@ -1,0 +1,35 @@
+.crypt-chip {
+  --chip-background-color: var(--neutral--light-4);
+  --chip-text-color: var(--primary);
+
+  background-color: var(--chip-background-color);
+  color: var(--chip-text-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0px 0.4rem;
+
+  font-size: 0.7rem;
+  border-radius: 0.7rem;
+
+  &.primary {
+    --chip-background-color: var(--primary);
+    --chip-text-color: var(--neutral);
+  }
+
+  &.secondary {
+    --chip-background-color: var(--secondary);
+    --chip-text-color: var(--neutral-secondary);
+  }
+
+  &.success {
+    --chip-background-color: var(--success);
+    --chip-text-color: var(--neutral-success);
+  }
+
+  &.danger {
+    --chip-background-color: var(--danger);
+    --chip-text-color: var(--neutral-danger--light-1);
+  }
+}
